@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARATH K -Web Developer Portfolio</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <meta name="description" content="BARATH K's professional portfolio showcasing skills, projects, certifications, and contact information as an emerging full-stack Web2 & Web3 developer.">
+    <meta name="keywords" content="BARATH K, Portfolio, Web Development, Full-Stack, Web2, Web3, HTML, CSS, JavaScript, React, Node.js, Spring Boot, MySQL, Resume">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="landing-page" class="landing-page-active">
+        <div class="landing-content">
+            <h1>Hey People Welcome To My Portfolio</h1>
+            <div class="loading-row">
+            <div class="spinner"></div>
+            <p>  Portfolio Loading...</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <nav id="navbar" class="section navbar-section">
+        <div class="container">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="
+            on"><i class="fas fa-bars"></i></label>
+            <ul class="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="portfolio-container" class="initial-hidden">
+
+        <header id="header" class="section header-section">
+            <div class="container">
+                <div class="header-content">
+                    <h1>My Portfolio</h1>
+                    <p>Exploring my journey as an emerging full-stack developer by showcasing my skills and projects in Web2 and Web3.</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" class="section about-me-section">
+                <div class="container">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-content about-content-flex">
+                         <div class="profile-image-container">
+                            <img src="assets/k.jpeg" alt="BARATH K Profile Picture" class="profile-photo">
+                        </div>                  
+                        <div class="about-text-content">
+                            <p>Hi, I'm BARATH K, pursuing my B.Tech Information Technology degree @Kings Engineering College
+                                and an emerging full-stack developer. I'm eager to learn , adapt and
+                                passionate about creating impactful Web2 and Web3 applications in tech World.</p>
+                            <p>I thrive in collaborative environments and love exploring new technologies, always striving to build innovative and efficient solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section skills-section bg-light">
+                <div class="container">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-content skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon html-icon"></i>
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt skill-icon css-icon"></i>
+                            <h3>CSS3</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js-square skill-icon js-icon"></i>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <!-- <div class="skill-card">
+                            <i class="fab fa-node-js skill-icon node-icon"></i>
+                            <h3>Node.js</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon react-icon"></i>
+                            <h3>React.js</h3>
+                        </div> -->
+                        <!--  -->
+                        <div class="skill-card">
+                            <i class="fab fa-java skill-icon java-icon"></i>
+                            <h3>Java</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-leaf skill-icon spring-icon"></i>
+                            <h3>Spring Boot</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon mysql-icon"></i>
+                            <h3>MySQL</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-user-tie skill-icon prompt-icon"></i>
+                            <h3>Prompt Engineering</h3>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt skill-icon git-icon"></i>
+                            <h3>Git & GitHub</h3>  
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-chart-bar bi-icon" ></i>
+                            <h3>Power BI</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <button id="viewMoreBtn" class="btn btn-secondary">View More</button>
+
+            <section id="projects" class="section projects-section">
+                <div class="container">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="section-content projects-grid">
+
+                        <div class="project-card">
+                            <img src="/assets/EMp.png" alt="Employees CRUD Application Thumbnail">
+                            <h3>Employees CRUD Application</h3>
+                            <p>A full-stack application for managing employee records with Create, Read, Update, and Delete functionalities.</p>
+                            <div class="project-links">
+                                 <a href="https://github.com/KBARATH13/emp-project/tree/frontend" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>frontend-Source Code
+                                </a>
+                                 <a href="https://github.com/KBARATH13/emp-project/tree/backend#" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>backend-Source Code
+                                </a>
+                                <!-- <a href="#" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a> -->
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/assets/Poll.png" alt="Online Polling Application Thumbnail">
+                            <h3>Online Polling Application</h3>
+                            <p>An interactive platform allowing users to create and participate in polls, view results in real-time.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/KBARATH13/PoLLaPP-/tree/frontend" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>frontend-Source Code
+                                </a>
+                                 <a href="https://github.com/KBARATH13/PoLLaPP-/tree/backend" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-code"></i>backend-Source Code
+                                </a>
+                                <!-- <a href="#" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="resume" class="section resume-section bg-light">
+                <div class="container">
+                    <h2 class="section-title">My Resume</h2>
+                    <div class="section-content resume-content">
+                        <p>View or download my resume to learn more about my experience, skills, and qualifications.</p>
+                        <div class="resume-buttons">
+                            <a href="/assets/mineRESclick.png" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-eye"></i> View Resume
+                            </a>
+                            <a href="/assets/mineRES.pdf" download="BARATH_K_Resume.pdf" class="btn btn-secondary">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications" class="section certifications-section">
+                <div class="container">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-content certifications-grid">
+
+                        <div class="certification-card">
+                            <img src="/assets/javaCert.jpg" alt="Certification Logo">
+                            <h3>Trained in Java</h3>
+                            <p><strong>Issued by:</strong>Spoken Tutorial IIT bombay</p>
+                            <p><strong>6th</strong> JUNE, 2024</p>
+                        </div>
+
+                         <div class="certification-card">
+                            <img src="/assets/biCert.jpg" alt="Certification Logo">
+                            <h3>Trained in Power BI</h3>
+                            <p><strong>Issued by:</strong>Office Master</p>
+                            <p><strong>18th</strong> MAY, 2025</p>
+                        </div>
+
+                        <div class="certification-card">
+                            <img src="/assets/htmlCert.jpg" alt="Certification Logo">
+                            <h3>Trained in HTML</h3>
+                            <p><strong>Issued by:</strong> Spoken Tutorial IIT bombay</p>
+                            <p><strong>21st</strong> MAY, 2025</p>
+                        </div>
+                        <button id="viewMoreBtn" class="btn btn-secondary">View More</button>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section contact-section bg-light">
+                <div class="container">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-content contact-content">
+                        <p>I'm always open to new opportunities, collaborations, or just a chat about technology. Feel free to reach out!</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:barathkrishna75@gmail.com">barathkrishna75@gmail.com</a></p>
+                            <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918925505316">+91 8925505316</a></p>
+                            <div class="social-links contact-grid">
+                                <a href="https://www.linkedin.com/in/barath-k-4335ab36a/" target="_blank" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" aria-label="Naukri Profile">
+                                    <i class="fas fa-briefcase"></i> Naukri
+                                </a>
+                                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" aria-label="GitHub Profile">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="https://instagram.com/silent_bt_terrific/" target="_blank" aria-label="Instagram Profile">
+                                    <i class="fab fa-instagram"></i> Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer id="footer" class="section footer-section">
+            <div class="container">
+                <p>BARATH K &copy; All Rights Reserved</p>
+                <p>B.Tech Information Technology</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+                 const skills = document.querySelectorAll('.skill-card');
+                const viewMoreBtn = document.getElementById('viewMoreBtn');
+
+                function limitSkills() {
+                    skills.forEach((skill, index) => {
+                        if (index > 3) skill.style.display = 'none';
+                    });
+                    viewMoreBtn.style.display = 'inline-block';
+                }
+
+                viewMoreBtn.addEventListener('click', () => {
+                    skills.forEach(skill => skill.style.display = 'flex');
+                    viewMoreBtn.style.display = 'none';
+                });
+
+                if (window.innerWidth <= 768) limitSkills();
+            });          
+        document.addEventListener('DOMContentLoaded', () => {
+            const landingPage = document.getElementById('landing-page');
+            const portfolioContainer = document.getElementById('portfolio-container');
+            const sections = document.querySelectorAll('.section:not(#navbar)'); 
+
+  
+            setTimeout(() => {
+                landingPage.classList.add('fade-out'); 
+                portfolioContainer.classList.add('zoom-in-active'); 
+
+                setTimeout(() => {
+                    landingPage.style.display = 'none'; 
+                    portfolioContainer.classList.remove('initial-hidden'); 
+                    portfolioContainer.classList.add('visible');
+                    window.scrollTo({top:0,behaviour:'auto'}); 
+                }, 1000); 
+            }, 1500); 
+
+
+            const observerOptions = {
+                root: null, 
+                rootMargin: '0px',
+                threshold: 0.1 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in-view');
+                    } else {
+                        entry.target.classList.remove('is-in-view');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+               
+                section.classList.add('animate-on-scroll');
+                observer.observe(section);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelectorAll('.nav-list a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.checked = false;
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById("modal-image");
+            const images = document.querySelectorAll('.certification-card img');
+            const span = document.getElementsByClassName("close")[0];
+
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    modal.style.display = "block";
+                    modalImg.src = img.src;
+                });
+            });
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+    </script>
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+</body>
+</html>
