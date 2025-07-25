@@ -347,11 +347,8 @@ a:hover {
 
 .menu-icon {
     display: none;
-    font-size: 1.8rem;
-    color: var(--text-on-dark);
-    cursor: pointer;
-    order: 1;
 }
+
 
 /* ==========================================================================
    About Me Section
@@ -742,7 +739,7 @@ a:hover {
         width:100%;
         padding: 0 1rem;
     }
-     .menu-icon {
+        .menu-icon {
         display: block;
         font-size: 1.5rem;
         cursor:pointer;
