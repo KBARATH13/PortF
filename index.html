@@ -17,17 +17,6 @@
 </head>
 <body>
 
-    <div id="landing-page" class="landing-page-active">
-        <div class="landing-content">
-            <h1>Hey People Welcome To My Portfolio</h1>
-            <div class="loading-row">
-            <div class="spinner"></div>
-            <p>  Portfolio Loading...</p>
-            
-            </div>
-        </div>
-    </div>
-
     <nav id="navbar" class="section navbar-section">
         <div class="container">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -43,13 +32,19 @@
         </div>
     </nav>
 
-    <div id="portfolio-container" class="initial-hidden">
+    <div id="portfolio-container">
 
-        <header id="header" class="section header-section">
+        <header id="header" class="section header-section hero-section">
             <div class="container">
                 <div class="header-content">
-                    <h1>My Portfolio</h1>
-                    <p>Exploring my journey as an emerging full-stack developer by showcasing my skills and projects in Web2 and Web3.</p>
+                    <div class="hero-badge"><i class="fas fa-code-branch"></i> Emerging Full-Stack &amp; Web3 Developer</div>
+                    <h1>BARATH K</h1>
+                    <p class="hero-tagline">Architecting robust full-stack applications with AI integration, IoT telemetry, and tamper-evident blockchain systems.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Projects</a>
+                        <a href="#resume" class="btn btn-secondary"><i class="fas fa-file-alt"></i> View Resume</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -104,14 +99,14 @@
                             <i class="fab fa-react skill-icon react-icon"></i>
                             <h3>React.js</h3>
                         </div> 
-                        <!-- <div class="skill-card">
+                        <div class="skill-card">
                             <i class="fas fa-database skill-icon mysql-icon"></i>
                             <h3>MySQL</h3>
                         </div>
                         <div class="skill-card">
                             <i class="fas fa-database skill-icon MongoDB-icon"></i>
                             <h3>MongoDB</h3>
-                        </div> -->
+                        </div>
                         <div class="skill-card">
                             <i class="fas fa-user-tie skill-icon prompt-icon"></i>
                             <h3>Prompt Engineering</h3>
@@ -125,77 +120,310 @@
                             <h3>Power BI</h3>
                         </div>
                     </div>
-                    <button id="viewMoreBtn" class="btn-link">View More</button>
+                    <button id="viewMoreSkillsBtn" class="btn-link">View More</button>
                 </div>
             </section>
             <section id="projects" class="section projects-section">
                 <div class="container">
                     <h2 class="section-title">Projects</h2>
+                    
+                    <!-- Interactive Category Filters -->
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile / Production POS</button>
+                        <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
+                        <button class="filter-btn" data-filter="ai">AI &amp; ML</button>
+                        <button class="filter-btn" data-filter="blockchain">Blockchain / Web3</button>
+                        <button class="filter-btn" data-filter="iot">IoT</button>
+                    </div>
+
                     <div class="section-content projects-grid">
-                        <div class="project-card">
-                            <img src="/assets/Quiz.png" alt="QuizCraft Application Thumbnail">
-                            <!-- <img src="/assets/craft..png" alt="QuizCraft Application Thumbnail"> -->
-                            <h3>AI integrated QuizCraft Application</h3>
-                            <p>A full-stack Quiz application with AI integration and chat systems for more social links</p>
-                            <div class="project-links">
-                                 <a href="https://github.com/KBARATH13/QuizCraft/tree/frontend" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>frontend-Source Code
-                                </a>
-                                 <a href="https://github.com/KBARATH13/QuizCraft/tree/backend" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>backend-Source Code
-                                </a>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a> -->
+
+                        <!-- TOP FEATURED DUO: TechnoAgri & QuizCraft (Side-by-Side) -->
+                        <div class="featured-duo-grid">
+
+                            <!-- FLAGSHIP 1: TechnoAgri (SmartFarm) -->
+                            <div class="project-card featured-duo-card" data-category="full-stack ai blockchain iot">
+                                <div class="featured-ribbon">
+                                    <i class="fas fa-crown"></i> Technology-Rich Flagship
+                                </div>
+                                <div class="project-banner smartfarm-banner">
+                                    <div class="banner-tech-icons">
+                                        <span title="React SPA"><i class="fab fa-react"></i></span>
+                                        <span title="Express Backend"><i class="fab fa-node-js"></i></span>
+                                        <span title="Python ML"><i class="fab fa-python"></i></span>
+                                        <span title="Hyperledger Fabric"><i class="fas fa-cubes"></i></span>
+                                        <span title="ESP32 IoT"><i class="fas fa-microchip"></i></span>
+                                    </div>
+                                    <div class="banner-title-area">
+                                        <h3>TechnoAgri (SmartFarm)</h3>
+                                        <p>AI-Assisted Smart-Farming Platform with IoT &amp; Tamper-Evident Blockchain Ledger</p>
+                                    </div>
+                                </div>
+                                <div class="project-body">
+                                    <p class="project-description">
+                                        An end-to-end smart agriculture ecosystem integrating an <strong>ESP32 soil sensor</strong> network, high-performance <strong>Express 5 REST API</strong>, and <strong>Python ML models (scikit-learn &amp; TensorFlow CNN)</strong> for automated crop recommendation, yield forecasting, and disease diagnosis. Anchors cryptographic state hashes into a <strong>Hyperledger Fabric 2.5 blockchain</strong> ledger for tamper-evident data integrity and verification.
+                                    </p>
+                                    <div class="project-tech-stack">
+                                        <span class="tech-tag">React SPA</span>
+                                        <span class="tech-tag">Express 5</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Python 3.13 (ML &amp; CNN)</span>
+                                        <span class="tech-tag">Hyperledger Fabric 2.5</span>
+                                        <span class="tech-tag">ESP32 IoT</span>
+                                        <span class="tech-tag">Docker Compose</span>
+                                        <span class="tech-tag">JWT Auth</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/KBARATH13/Techno_Agri" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Frontend Code
+                                        </a>
+                                        <a href="https://github.com/KBARATH13/Techno_Agri/tree/backend" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Backend Code
+                                        </a>
+                                        <a href="https://github.com/KBARATH13/Techno_Agri/tree/IOT" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> IoT Code
+                                        </a>
+                                        <a ref="https://github.com/KBARATH13/Techno_Agri/tree/BlockChain" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Blockchain Code
+                                        <a href="assets/PPT/TechnoAgri_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                            <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="/assets/gignity.png" alt="QuizCraft Application Thumbnail">
-                            <h3>Part time and gigs finding application</h3>
-                            <p>A full stack gigs and part time jobs finding applicationsfor people within thier surroundings with good community </p>
-                            <div class="project-links">
-                                 <a href="https://github.com/KBARATH13/expogig/tree/frontendgig" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>frontend-Source Code
-                                </a>
-                                 <a href="https://github.com/KBARATH13/expogig/tree/backendgig" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>backend-Source Code
-                                </a>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a> -->
+
+                            <!-- FLAGSHIP 2: AI Integrated QuizCraft Application -->
+                            <div class="project-card featured-duo-card" data-category="full-stack ai">
+                                <div class="featured-ribbon">
+                                    <i class="fas fa-layer-group"></i> Feature-Rich Flagship
+                                </div>
+                                <div class="project-banner quizcraft-featured-banner">
+                                    <div class="banner-tech-icons">
+                                        <span title="React SPA"><i class="fab fa-react"></i></span>
+                                        <span title="Node.js & Express"><i class="fab fa-node-js"></i></span>
+                                        <span title="AI Question Synthesis"><i class="fas fa-robot"></i></span>
+                                        <span title="Real-Time Chat & Socket.io"><i class="fas fa-comments"></i></span>
+                                        <span title="REST API"><i class="fas fa-network-wired"></i></span>
+                                    </div>
+                                    <div class="banner-title-area">
+                                        <h3>AI-Integrated QuizCraft</h3>
+                                        <p>Comprehensive Learning Platform with AI Question Engine, Multi-User Chat &amp; Evaluation</p>
+                                    </div>
+                                </div>
+                                <div class="project-body">
+                                    <p class="project-description">
+                                        A feature-packed full-stack assessment ecosystem built with <strong>React</strong> and <strong>Node.js / Express</strong>. Surpassing conventional quiz tools, it integrates dynamic AI-powered question synthesis, automated multi-format test evaluation, real-time multiplayer scoring rooms, and integrated peer-to-peer social chat systems for high-engagement collaborative learning.
+                                    </p>
+                                    <div class="project-tech-stack">
+                                        <span class="tech-tag">React SPA</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">AI Prompt Engineering</span>
+                                        <span class="tech-tag">Socket.io Real-Time</span>
+                                        <span class="tech-tag">REST APIs</span>
+                                        <span class="tech-tag">JWT Auth</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/KBARATH13/QuizCraft/tree/frontend" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Frontend Code
+                                        </a>
+                                        <a href="https://github.com/KBARATH13/QuizCraft/tree/backend" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Backend Code
+                                        </a>
+                                        <a href="assets/PPT/QuizCraft_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                            <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
-                        <div class="project-card">
-                            <img src="/assets/EMp.png" alt="Employees CRUD Application Thumbnail">
-                            <h3>Employees CRUD Application</h3>
-                            <p>A full-stack application for managing employee records with Create, Read, Update, and Delete functionalities.</p>
-                            <div class="project-links">
-                                 <a href="https://github.com/KBARATH13/emp-project/tree/frontend" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>frontend-Source Code
-                                </a>
-                                 <a href="https://github.com/KBARATH13/emp-project/tree/backend#" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>backend-Source Code
-                                </a>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a> -->
+
+                        <!-- STANDALONE PRODUCTION DEPLOYED PROJECT: GroAppBill (Below Top Duo) -->
+                        <div class="project-card production-project" data-category="mobile production">
+                            <div class="production-ribbon">
+                                <span class="pulse-indicator"></span> Real-Time Production App &bull; Active Retail POS
+                            </div>
+                            <div class="project-banner groapp-banner">
+                                <div class="banner-tech-icons">
+                                    <span title="Flutter & Dart"><i class="fab fa-google"></i></span>
+                                    <span title="Mobile POS"><i class="fas fa-mobile-alt"></i></span>
+                                    <span title="ESC/POS Thermal Network Printer"><i class="fas fa-print"></i></span>
+                                    <span title="CameraX Barcode Scanner"><i class="fas fa-barcode"></i></span>
+                                    <span title="Google Cloud Firestore"><i class="fas fa-fire"></i></span>
+                                    <span title="Offline-First Sync Engine"><i class="fas fa-database"></i></span>
+                                </div>
+                                <div class="banner-title-area">
+                                    <div class="flexibility-tag"><i class="fas fa-check-circle"></i> Industry Flexibility: Cross-Platform &amp; Hardware Engineering</div>
+                                    <h3>GroAppBill (AVS Billing)</h3>
+                                    <p>Offline-First Retail POS &amp; Inventory Mobile System &mdash; Live in Daily Real-World Operation</p>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p class="project-description">
+                                    Demonstrating proven engineering flexibility beyond web applications, <strong>GroAppBill</strong> is a real-time deployed, high-throughput Point of Sale (POS) and inventory mobile system currently used by shop owners and cashiers in day-to-day operations. Engineered in <strong>Flutter &amp; Dart</strong> using <strong>Riverpod 2.x</strong> state management, it connects directly with physical store hardware via <strong>raw TCP network socket ESC/POS thermal printing (port 9100)</strong>, <strong>CameraX / ML Kit barcode scanning</strong>, and an <strong>offline-first local cache</strong> with automated Cloud Firestore synchronization when reconnected.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag tag-production">In Active Production</span>
+                                    <span class="tech-tag">Flutter &amp; Dart</span>
+                                    <span class="tech-tag">Riverpod 2.x</span>
+                                    <span class="tech-tag">Google Cloud Firestore</span>
+                                    <span class="tech-tag">ESC/POS Thermal Socket (9100)</span>
+                                    <span class="tech-tag">CameraX Barcode Scanning</span>
+                                    <span class="tech-tag">Offline Queue &amp; Sync</span>
+                                    <span class="tech-tag">Android Hardware Layer</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/GroAppBill" target="_blank" class="btn btn-secondary">
+                                         <i class="fas fa-code"></i> Flutter Code
+                                    </a>
+                                    <a href="assets/PPT/GroAppBill_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="project-card">
-                            <img src="/assets/Poll.png" alt="Online Polling Application Thumbnail">
-                            <h3>Online Polling Application</h3>
-                            <p>An interactive platform allowing users to create and participate in polls, view results in real-time.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/KBARATH13/PoLLaPP-/tree/frontend" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>frontend-Source Code
-                                </a>
-                                 <a href="https://github.com/KBARATH13/PoLLaPP-/tree/backend" target="_blank" class="btn btn-secondary">
-                                    <i class="fas fa-code"></i>backend-Source Code
-                                </a>
-                                <!-- <a href="#" target="_blank" class="btn btn-primary">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a> -->
+                        <!-- PROJECT: ResumeForge AI -->
+                        <div class="project-card" data-category="full-stack ai">
+                            <div class="project-media">
+                                <img src="assets/Project HomePage/ResumeForge.png" alt="ResumeForge AI Application Thumbnail">
+                            </div>
+                            <div class="project-body">
+                                <h3>ResumeForge AI – ATS Resume Engine</h3>
+                                <p class="project-description">An intelligent ATS resume optimization and tailoring engine leveraging structured LLM prompt engineering to score resumes against target roles and generate industry-standard PDF outputs.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Python / Node.js</span>
+                                    <span class="tech-tag">Prompt Engineering</span>
+                                    <span class="tech-tag">NLP / ATS Scoring</span>
+                                    <span class="tech-tag">PDF Generation</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/ResumeBuilder" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Frontend Code
+                                    </a>
+                                    <a href="assets/PPT/ResumeForge_AI_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT: Gignity -->
+                        <div class="project-card" data-category="full-stack">
+                            <div class="project-media">
+                                <img src="assets/Project HomePage/gignity.png" alt="Gignity Application Thumbnail">
+                            </div>
+                            <div class="project-body">
+                                <h3>Gignity – Local Gigs &amp; Part-Time Finder</h3>
+                                <p class="project-description">A community-driven full-stack marketplace connecting job seekers with localized part-time shifts and freelance gigs within their neighborhoods with verified trust metrics.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">JWT Auth</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/expogig/tree/frontendgig" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Frontend Code
+                                    </a>
+                                    <a href="https://github.com/KBARATH13/expogig/tree/backendgig" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Backend Code
+                                    </a>
+                                    <a href="assets/PPT/Gignity_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT: PollSpace -->
+                        <div class="project-card" data-category="full-stack">
+                            <div class="project-media">
+                                <img src="assets/Project HomePage/PollSpace.png" alt="PollSpace Application Thumbnail">
+                            </div>
+                            <div class="project-body">
+                                <h3>PollSpace – Real-Time Polling Platform</h3>
+                                <p class="project-description">Interactive real-time polling application with instant distributed voting, live broadcast updates, concurrent tabulation, and dynamic visual analytics.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">WebSockets</span>
+                                    <span class="tech-tag">Live Analytics</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/PoLLaPP-/tree/frontend" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Frontend Code
+                                    </a>
+                                    <a href="https://github.com/KBARATH13/PoLLaPP-/tree/backend" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Backend Code
+                                    </a>
+                                    <a href="assets/PPT/PollSpace_Architecture_Presentation.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT: Employees CRUD -->
+                        <div class="project-card" data-category="full-stack">
+                            <div class="project-media">
+                                <img src="assets/Project HomePage/EMP.png" alt="Employees CRUD Application Thumbnail">
+                            </div>
+                            <div class="project-body">
+                                <h3>Employees Directory &amp; CRUD Management</h3>
+                                <p class="project-description">Enterprise employee records management system featuring strict role-based access control, query filtering, pagination, and transactional CRUD operations.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">REST Architecture</span>
+                                    <span class="tech-tag">CRUD Operations</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/emp-project/tree/frontend" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Frontend Code
+                                    </a>
+                                    <a href="https://github.com/KBARATH13/emp-project/tree/backend#" target="_blank" class="btn btn-secondary">
+                                        <i class="fas fa-code"></i> Backend Code
+                                    </a>
+                                    <a href="assets/PPT/Employee_Management_System_Architecture.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT: Railway Seat Management -->
+                        <div class="project-card" data-category="full-stack">
+                            <div class="project-media">
+                                <img src="assets/Project HomePage/Railway-Mgt.png" alt="Railway Seat Management System Thumbnail">
+                            </div>
+                            <div class="project-body">
+                                <h3>Railway Seat &amp; Berth Management System</h3>
+                                <p class="project-description">Concurrency-safe seat allocation and berth reservation architecture handling quota management, RAC/waiting list progression, and transactional consistency.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">Concurrency Control</span>
+                                    <span class="tech-tag">State Machines</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/KBARATH13/Railway-Ticket-Booking/tree/frontend" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Frontend Code
+                                        </a>
+                                        <a href="https://github.com/KBARATH13/Railway-Ticket-Booking" target="_blank" class="btn btn-secondary">
+                                            <i class="fas fa-code"></i> Backend Code
+                                        </a>
+                                    <a href="assets/PPT/Railway_Seat_Management_Architecture.pptx" download class="btn btn-architecture">
+                                        <i class="fas fa-file-powerpoint"></i> View Architecture PPT
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
@@ -209,10 +437,10 @@
                     <div class="section-content resume-content">
                         <p>View or download my resume to learn more about my experience, skills, and qualifications.</p>
                         <div class="resume-buttons">
-                            <a href="assets\RES.png" target="_blank" class="btn btn-primary">
+                            <a href="assets/RES.png" target="_blank" class="btn btn-primary">
                                 <i class="fas fa-eye"></i> View Resume
                             </a>
-                            <a href="assets\RES.pdf" download="BARATH_K_Resume.pdf" class="btn btn-secondary">
+                            <a href="assets/RES.pdf" download="BARATH_K_Resume.pdf" class="btn btn-secondary">
                                 <i class="fas fa-download"></i> Download Resume
                             </a>
                         </div>
@@ -226,63 +454,62 @@
                     <div class="section-content certifications-grid">
 
                         <div class="certification-card">
-                            <img src="assets\JAVA-FSWD.png" alt="Certification Logo">
+                            <img src="assets/Certificates/JAVA-FSWD.png" alt="Certification Logo">
                             <h3>JAVA FSWD</h3>
                             <p><strong>Issued by:</strong>TECH Academy</p>
                             <p><strong>24th</strong> OCTOBER, 2025</p>
                         </div>
 
                         <div class="certification-card">
-                            <img src="assets\MERN_FSWD.png" alt="Certification Logo">
+                            <img src="assets/Certificates/MERN_FSWD.png" alt="Certification Logo">
                             <h3>MERN FSWD</h3>
                             <p><strong>Issued by:</strong>Udemy</p>
                             <p><strong>12th</strong> OCTOBER, 2025</p>
                         </div>
 
                         <div class="certification-card">
-                            <img src="/assets/javaCert.jpg" alt="Certification Logo">
+                            <img src="assets/Certificates/javaCert.jpg" alt="Certification Logo">
                             <h3>Trained in Java</h3>
                             <p><strong>Issued by:</strong>Spoken Tutorial IIT bombay</p>
                             <p><strong>6th</strong> JUNE, 2024</p>
                         </div>
 
                         <div class="certification-card">
-                            <img src="/assets/htmlCert.jpg" alt="Certification Logo">
+                            <img src="assets/Certificates/htmlCert.jpg" alt="Certification Logo">
                             <h3>Trained in HTML</h3>
                             <p><strong>Issued by:</strong> Spoken Tutorial IIT bombay</p>
                             <p><strong>21st</strong> MAY, 2025</p>
                         </div>
 
                          <div class="certification-card">
-                            <img src="/assets/school.jpg" alt="Certification Logo">
+                            <img src="assets/Certificates/school.jpg" alt="Certification Logo">
                             <h3>Computer Fundamentals</h3>
-                            <p><strong>Issued by:</strong> Dpt of CA with Internal Quality Assusrance Cell</p>
+                            <p><strong>Issued by:</strong> Dept of CA with Internal Quality Assurance Cell</p>
                             <p><strong>4th</strong> June, 2021</p>
                         </div>
 
                         <div class="certification-card">
-                            <img src="/assets/novitech.jpg" alt="Certification Logo">
+                            <img src="assets/Certificates/novitech.jpg" alt="Certification Logo">
                             <h3>AI/DS BootCamp</h3>
                             <p><strong>Issued by:</strong>NoviTech R&D Pvt Ltd</p>
                             <p><strong>26th</strong> OCTOBER, 2024</p>
                         </div>
 
                         <div class="certification-card">
-                            <img src="/assets/Iot.jpg" alt="Certification Logo">
-                            <h3>Iot workshop</h3>
-                            <p><strong>Issued by:</strong>Iot club of KEC</p>
+                            <img src="assets/Certificates/Iot.jpg" alt="Certification Logo">
+                            <h3>IoT Workshop</h3>
+                            <p><strong>Issued by:</strong>IoT Club of KEC</p>
                             <p><strong>23rd</strong> NOVEMBER, 2023</p>
                         </div>
 
                          <div class="certification-card">
-                            <img src="/assets/biCert.jpg" alt="Certification Logo">
+                            <img src="assets/Certificates/biCert.jpg" alt="Certification Logo">
                             <h3>Trained in Power BI</h3>
                             <p><strong>Issued by:</strong>Office Master</p>
                             <p><strong>18th</strong> MAY, 2025</p>
                         </div>
-                                    
-                        <button id="viewMoreBtn" class="btn-link">View More</button>
                     </div>
+                    <button id="viewMoreCertsBtn" class="btn-link">View More</button>
                 </div>
             </section>
             <section id="contact" class="section contact-section bg-light">
@@ -300,7 +527,7 @@
                                 <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" aria-label="Naukri Profile">
                                     <i class="fas fa-briefcase"></i> Naukri
                                 </a>
-                                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" aria-label="GitHub Profile">
+                                <a href="https://github.com/KBARATH13" target="_blank" aria-label="GitHub Profile">
                                     <i class="fab fa-github"></i> GitHub
                                 </a>
                                 <a href="https://instagram.com/silent_bt_terrific/" target="_blank" aria-label="Instagram Profile">
@@ -313,7 +540,6 @@
             </section>
         </main>
 
-
         <footer id="footer" class="section footer-section">
             <div class="container">
                 <p>BARATH K &copy; All Rights Reserved</p>
@@ -323,50 +549,91 @@
     </div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-                 const skills = document.querySelectorAll('.skill-card');
-                const viewMoreBtn = document.getElementById('viewMoreBtn');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Interactive Project Filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.projects-grid .project-card');
 
-                function limitSkills() {
-                    skills.forEach((skill, index) => {
-                        if (index > 3) skill.style.display = 'none';
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const selectedFilter = btn.getAttribute('data-filter');
+
+                    const duoGrid = document.querySelector('.featured-duo-grid');
+                    let visibleDuoCount = 0;
+
+                    projectCards.forEach(card => {
+                        const categories = card.getAttribute('data-category') || '';
+                        const categoryList = categories.split(' ');
+
+                        if (selectedFilter === 'all' || categoryList.includes(selectedFilter)) {
+                            card.style.display = 'flex';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(15px)';
+                            requestAnimationFrame(() => {
+                                card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            });
+                            if (card.closest('.featured-duo-grid')) {
+                                visibleDuoCount++;
+                            }
+                        } else {
+                            card.style.display = 'none';
+                        }
                     });
-                    viewMoreBtn.style.display = 'inline-block';
+
+                    if (duoGrid) {
+                        duoGrid.style.display = visibleDuoCount > 0 ? 'grid' : 'none';
+                        if (visibleDuoCount === 1 && window.innerWidth > 960) {
+                            duoGrid.style.gridTemplateColumns = '1fr';
+                        } else if (window.innerWidth > 960) {
+                            duoGrid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+                        }
+                    }
+                });
+            });
+
+            // View More for Skills and Certifications (mobile limit)
+            function setupViewMore(itemsSelector, btnId, visibleCount) {
+                const items = document.querySelectorAll(itemsSelector);
+                const btn = document.getElementById(btnId);
+                if (!btn || !items.length) return;
+
+                function applyLimit() {
+                    if (window.innerWidth <= 768 && items.length > visibleCount) {
+                        items.forEach((item, index) => {
+                            if (index >= visibleCount) item.style.display = 'none';
+                        });
+                        btn.style.display = 'inline-block';
+                    } else {
+                        items.forEach(item => item.style.display = '');
+                        btn.style.display = 'none';
+                    }
                 }
 
-                viewMoreBtn.addEventListener('click', () => {
-                    skills.forEach(skill => skill.style.display = 'flex');
-                    viewMoreBtn.style.display = 'none';
+                btn.addEventListener('click', () => {
+                    items.forEach(item => item.style.display = '');
+                    btn.style.display = 'none';
                 });
 
-                if (window.innerWidth <= 768) limitSkills();
-            });          
-        document.addEventListener('DOMContentLoaded', () => {
-            const landingPage = document.getElementById('landing-page');
-            const portfolioContainer = document.getElementById('portfolio-container');
-            const sections = document.querySelectorAll('.section:not(#navbar)'); 
+                applyLimit();
+                window.addEventListener('resize', applyLimit);
+            }
 
-  
-            setTimeout(() => {
-                landingPage.classList.add('fade-out'); 
-                portfolioContainer.classList.add('zoom-in-active'); 
+            setupViewMore('.skill-card', 'viewMoreSkillsBtn', 4);
+            setupViewMore('.certification-card', 'viewMoreCertsBtn', 4);
 
-                setTimeout(() => {
-                    landingPage.style.display = 'none'; 
-                    portfolioContainer.classList.remove('initial-hidden'); 
-                    portfolioContainer.classList.add('visible');
-                    window.scrollTo({top:0,behaviour:'auto'}); 
-                }, 1000); 
-            }, 1500); 
-
-
+            // Scroll Reveal Animation via IntersectionObserver
             const observerOptions = {
-                root: null, 
+                root: null,
                 rootMargin: '0px',
-                threshold: 0.1 
+                threshold: 0.1
             };
 
-            const observer = new IntersectionObserver((entries, observer) => {
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-in-view');
@@ -376,45 +643,52 @@
                 });
             }, observerOptions);
 
+            const sections = document.querySelectorAll('.section:not(#navbar)');
             sections.forEach(section => {
-               
                 section.classList.add('animate-on-scroll');
                 observer.observe(section);
             });
-        });
 
-        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle auto-close on link click
             const menuToggle = document.getElementById('menu-toggle');
             const navLinks = document.querySelectorAll('.nav-list a');
-
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    menuToggle.checked = false;
+                    if (menuToggle) menuToggle.checked = false;
                 });
             });
-        });
 
-        document.addEventListener('DOMContentLoaded', () => {
+            // Certificate image preview modal
             const modal = document.getElementById('image-modal');
-            const modalImg = document.getElementById("modal-image");
-            const images = document.querySelectorAll('.certification-card img');
-            const span = document.getElementsByClassName("close")[0];
+            const modalImg = document.getElementById('modal-image');
+            const certImages = document.querySelectorAll('.certification-card img');
+            const closeModal = document.querySelector('.modal .close');
 
-            images.forEach(img => {
-                img.addEventListener('click', () => {
-                    modal.style.display = "block";
-                    modalImg.src = img.src;
+            if (modal && modalImg) {
+                certImages.forEach(img => {
+                    img.addEventListener('click', () => {
+                        modal.style.display = 'block';
+                        modalImg.src = img.src;
+                    });
                 });
-            });
 
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+                if (closeModal) {
+                    closeModal.onclick = () => {
+                        modal.style.display = 'none';
+                    };
                 }
+
+                window.onclick = (event) => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                    }
+                };
+
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && modal.style.display === 'block') {
+                        modal.style.display = 'none';
+                    }
+                });
             }
         });
     </script>
