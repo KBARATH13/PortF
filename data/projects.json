@@ -1,0 +1,161 @@
+[
+  {
+    "id": "technoagri",
+    "pillar": true,
+    "title": "TechnoAgri (SmartFarm)",
+    "subtitle": "AI-Assisted Smart-Farming Platform with IoT & Tamper-Evident Blockchain Ledger",
+    "type": "featured-duo",
+    "ribbon": { "icon": "fas fa-crown", "label": "Technology-Rich Flagship" },
+    "bannerClass": "smartfarm-banner",
+    "bannerIcons": [
+      { "icon": "fab fa-react",    "title": "React SPA" },
+      { "icon": "fab fa-node-js", "title": "Express Backend" },
+      { "icon": "fab fa-python",  "title": "Python ML" },
+      { "icon": "fas fa-cubes",   "title": "Hyperledger Fabric" },
+      { "icon": "fas fa-microchip","title": "ESP32 IoT" }
+    ],
+    "categories": ["full-stack", "ai", "blockchain", "iot"],
+    "description": "An end-to-end smart agriculture ecosystem integrating an <strong>ESP32 soil sensor</strong> network, high-performance <strong>Express 5 REST API</strong>, and <strong>Python ML models (scikit-learn &amp; TensorFlow CNN)</strong> for automated crop recommendation, yield forecasting, and disease diagnosis. Anchors cryptographic state hashes into a <strong>Hyperledger Fabric 2.5 blockchain</strong> ledger for tamper-evident data integrity and verification.",
+    "tags": ["React SPA", "Express 5", "MongoDB", "Python 3.13 (ML & CNN)", "Hyperledger Fabric 2.5", "ESP32 IoT", "Docker Compose", "JWT Auth"],
+    "links": [
+      { "label": "Frontend Code",       "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Techno_Agri",                          "type": "secondary" },
+      { "label": "Backend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Techno_Agri/tree/backend",              "type": "secondary" },
+      { "label": "IoT Code",            "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Techno_Agri/tree/IOT",                  "type": "secondary" },
+      { "label": "Blockchain Code",     "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Techno_Agri/tree/BlockChain",           "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/TechnoAgri_Architecture_Presentation.pptx",              "type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "quizcraft",
+    "pillar": true,
+    "title": "AI-Integrated QuizCraft",
+    "subtitle": "Comprehensive Learning Platform with AI Question Engine, Multi-User Chat & Evaluation",
+    "type": "featured-duo",
+    "ribbon": { "icon": "fas fa-layer-group", "label": "Feature-Rich Flagship" },
+    "bannerClass": "quizcraft-featured-banner",
+    "bannerIcons": [
+      { "icon": "fab fa-react",          "title": "React SPA" },
+      { "icon": "fab fa-node-js",        "title": "Node.js & Express" },
+      { "icon": "fas fa-robot",          "title": "AI Question Synthesis" },
+      { "icon": "fas fa-comments",       "title": "Real-Time Chat & Socket.io" },
+      { "icon": "fas fa-network-wired",  "title": "REST API" }
+    ],
+    "categories": ["full-stack", "ai"],
+    "description": "A feature-packed full-stack assessment ecosystem built with <strong>React</strong> and <strong>Node.js / Express</strong>. Surpassing conventional quiz tools, it integrates dynamic AI-powered question synthesis, automated multi-format test evaluation, real-time multiplayer scoring rooms, and integrated peer-to-peer social chat systems for high-engagement collaborative learning.",
+    "tags": ["React SPA", "Node.js", "Express", "AI Prompt Engineering", "Socket.io Real-Time", "REST APIs", "JWT Auth"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/QuizCraft/tree/frontend", "type": "secondary" },
+      { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/QuizCraft/tree/backend",  "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/QuizCraft_Architecture_Presentation.pptx","type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "groappbill",
+    "pillar": true,
+    "title": "GroAppBill (AVS Billing)",
+    "subtitle": "Offline-First Retail POS & Inventory Mobile System — Live in Daily Real-World Operation",
+    "type": "production",
+    "ribbon": { "icon": null, "label": "Real-Time Production App • Active Retail POS", "pulse": true },
+    "bannerClass": "groapp-banner",
+    "flexibilityTag": "Industry Flexibility: Mobile & Hardware Engineering",
+    "bannerIcons": [
+      { "icon": "fab fa-google",    "title": "Flutter & Dart" },
+      { "icon": "fas fa-mobile-alt","title": "Mobile POS" },
+      { "icon": "fas fa-print",     "title": "ESC/POS Thermal Network Printer" },
+      { "icon": "fas fa-barcode",   "title": "CameraX Barcode Scanner" },
+      { "icon": "fas fa-fire",      "title": "Google Cloud Firestore" },
+      { "icon": "fas fa-database",  "title": "Offline-First Sync Engine" }
+    ],
+    "categories": ["mobile", "production"],
+    "description": "Demonstrating proven engineering flexibility beyond web applications, <strong>GroAppBill</strong> is a real-time deployed, high-throughput Point of Sale (POS) and inventory mobile system currently used by shop owners and cashiers in day-to-day operations. Engineered in <strong>Flutter &amp; Dart</strong> using <strong>Riverpod 2.x</strong> state management, it connects directly with physical store hardware via <strong>raw TCP network socket ESC/POS thermal printing (port 9100)</strong>, <strong>CameraX / ML Kit barcode scanning</strong>, and an <strong>offline-first local cache</strong> with automated Cloud Firestore synchronization when reconnected.",
+    "tags": ["In Active Production", "Flutter & Dart", "Riverpod 2.x", "Google Cloud Firestore", "ESC/POS Thermal Socket (9100)", "CameraX Barcode Scanning", "Offline Queue & Sync", "Android Hardware Layer"],
+    "links": [
+      { "label": "Flutter Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/GroAppBill",                    "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/GroAppBill_Architecture_Presentation.pptx","type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "resumeforge",
+    "pillar": false,
+    "title": "ResumeForge AI – ATS Resume Engine",
+    "subtitle": null,
+    "type": "standard",
+    "image": "assets/Project HomePage/ResumeForge.png",
+    "imageAlt": "ResumeForge AI Application Thumbnail",
+    "categories": ["full-stack", "ai"],
+    "description": "An intelligent ATS resume optimization and tailoring engine leveraging structured LLM prompt engineering to score resumes against target roles and generate industry-standard PDF outputs.",
+    "tags": ["React", "Python / Node.js", "Prompt Engineering", "NLP / ATS Scoring", "PDF Generation"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/ResumeBuilder",                         "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/ResumeForge_AI_Architecture_Presentation.pptx","type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "gignity",
+    "pillar": false,
+    "title": "Gignity – Local Gigs & Part-Time Finder",
+    "subtitle": null,
+    "type": "standard",
+    "image": "assets/Project HomePage/gignity.png",
+    "imageAlt": "Gignity Application Thumbnail",
+    "categories": ["full-stack"],
+    "description": "A community-driven full-stack marketplace connecting job seekers with localized part-time shifts and freelance gigs within their neighborhoods with verified trust metrics.",
+    "tags": ["React", "Node.js", "Express", "MongoDB", "JWT Auth"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/expogig/tree/frontendgig","type": "secondary" },
+      { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/expogig/tree/backendgig", "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/Gignity_Architecture_Presentation.pptx",   "type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "pollspace",
+    "pillar": false,
+    "title": "PollSpace – Real-Time Polling Platform",
+    "subtitle": null,
+    "type": "standard",
+    "image": "assets/Project HomePage/PollSpace.png",
+    "imageAlt": "PollSpace Application Thumbnail",
+    "categories": ["full-stack"],
+    "description": "Interactive real-time polling application with instant distributed voting, live broadcast updates, concurrent tabulation, and dynamic visual analytics.",
+    "tags": ["React", "Node.js", "Express", "WebSockets", "Live Analytics"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/PoLLaPP-/tree/frontend", "type": "secondary" },
+      { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/PoLLaPP-/tree/backend",  "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/PollSpace_Architecture_Presentation.pptx","type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "employees-crud",
+    "pillar": false,
+    "title": "Employees Directory & CRUD Management",
+    "subtitle": null,
+    "type": "standard",
+    "image": "assets/Project HomePage/EMP.png",
+    "imageAlt": "Employees CRUD Application Thumbnail",
+    "categories": ["full-stack"],
+    "description": "Enterprise employee records management system featuring strict role-based access control, query filtering, pagination, and transactional CRUD operations.",
+    "tags": ["React", "Node.js", "Express", "REST Architecture", "CRUD Operations"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/emp-project/tree/frontend",  "type": "secondary" },
+      { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/emp-project/tree/backend#", "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/Employee_Management_System_Architecture.pptx","type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "railway",
+    "pillar": false,
+    "title": "Railway Seat & Berth Management System",
+    "subtitle": null,
+    "type": "standard",
+    "image": "assets/Project HomePage/Railway-Mgt.png",
+    "imageAlt": "Railway Seat Management System Thumbnail",
+    "categories": ["full-stack"],
+    "description": "Concurrency-safe seat allocation and berth reservation architecture handling quota management, RAC/waiting list progression, and transactional consistency.",
+    "tags": ["Java", "Spring Boot", "MySQL", "Concurrency Control", "State Machines"],
+    "links": [
+      { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Railway-Ticket-Booking/tree/frontend","type": "secondary" },
+      { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Railway-Ticket-Booking",              "type": "secondary" },
+      { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/Railway_Seat_Management_Architecture.pptx",             "type": "architecture", "download": true }
+    ]
+  }
+]

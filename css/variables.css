@@ -1,0 +1,81 @@
+/* ==========================================================================
+   variables.css — Design Tokens, Custom Properties & Animations
+   Portfolio: BARATH K | Crimson Glassmorphism Theme
+   ========================================================================== */
+
+:root {
+  /* ── Palette ─────────────────────────────────────────── */
+  --primary-color:       #C23B3B;
+  --primary-light:       #E05353;
+  --secondary-color:     #FCE8E8;
+  --accent-color:        #FF6B6B;
+  --accent-glow:         rgba(255, 107, 107, 0.4);
+  --gold-accent:         #FFD166;
+
+  /* ── Backgrounds ─────────────────────────────────────── */
+  --bg-dark:             #1A0505;
+  --bg-dark-alt:         #2A0909;
+  --bg-light-alt:        rgba(74, 18, 18, 0.45);
+
+  /* ── Text ────────────────────────────────────────────── */
+  --text-on-dark:        #FFFFFF;
+  --text-muted:          #F0D5D5;
+
+  /* ── Glass / Card Surfaces ───────────────────────────── */
+  --card-bg:             rgba(60, 14, 14, 0.65);
+  --card-glass-border:   rgba(252, 232, 232, 0.15);
+  --border-color:        rgba(194, 59, 59, 0.35);
+
+  /* ── Typography ──────────────────────────────────────── */
+  --font-heading:        'Poppins', sans-serif;
+  --font-body:           'Lato', sans-serif;
+
+  /* ── Shadows ─────────────────────────────────────────── */
+  --box-shadow:          0 10px 30px rgba(0, 0, 0, 0.45);
+  --glass-shadow:        0 12px 35px 0 rgba(0, 0, 0, 0.4);
+
+  /* ── Transitions ─────────────────────────────────────── */
+  --transition-speed:        0.4s ease-out;
+  --fast-transition-speed:   0.25s ease;
+
+  /* ── Drawer / Modal ──────────────────────────────────── */
+  --drawer-width:        420px;
+  --drawer-bg:           rgba(28, 6, 6, 0.96);
+  --drawer-border:       rgba(255, 107, 107, 0.25);
+  --drawer-z:            2000;
+  --overlay-bg:          rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================================================================
+   Keyframe Animations (global — used across components)
+   ========================================================================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGreen {
+  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(4, 23, 15, 0.7); }
+  70%  { transform: scale(1.15); box-shadow: 0 0 0 6px rgba(4, 23, 15, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(4, 23, 15, 0); }
+}
+
+@keyframes drawerSlideIn {
+  from { transform: translateX(100%); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes drawerSlideOut {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

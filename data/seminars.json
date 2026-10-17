@@ -1,0 +1,57 @@
+[
+  {
+    "id": "web2-web3-seminar",
+    "meta": {
+      "role": "Lead Speaker • Final Year",
+      "roleIcon": "fas fa-microphone-alt",
+      "audience": "60+ Junior Engineering Students",
+      "audienceIcon": "fas fa-users",
+      "venue": "Kings Engineering College",
+      "venueIcon": "fas fa-university"
+    },
+    "kicker": "Department Technical Seminar",
+    "title": "Demystifying Web Development: From Web2 to Web3 & Real-World Architecture",
+    "abstract": "Conducted an in-depth technical seminar for 60+ junior engineering students, bridging academic fundamentals with production system design, modern multi-protocol communication architectures, and decentralized state machines.",
+    "photos": [
+      {
+        "src": "assets/Seminar/WhatsApp Image 2026-10-15 at 11.05.29 PM.jpeg",
+        "alt": "Barath K delivering technical seminar",
+        "label": "Session Delivery",
+        "labelIcon": "fas fa-chalkboard-teacher"
+      },
+      {
+        "src": "assets/Seminar/WhatsApp Image 2026-10-15 at 11.05.30 PM.jpeg",
+        "alt": "Audience and projection screen at seminar",
+        "label": "60+ Attendees • Interactive Q&A",
+        "labelIcon": "fas fa-users"
+      }
+    ],
+    "syllabus": [
+      {
+        "icon": "fas fa-network-wired",
+        "title": "01. Modern API Protocols: REST, WebSockets, GraphQL & Webhooks",
+        "body": "Deconstructed real-world communication models: stateless HTTP RESTful contracts, full-duplex persistent WebSockets for live bi-directional streaming, schema-driven GraphQL queries/mutations to eliminate over-fetching, and event-driven Webhooks for asynchronous third-party callbacks."
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "02. Enterprise Database Connectivity & Data Flow",
+        "body": "Detailed the end-to-end client-server lifecycle, connection pooling, transactional ACID guarantees, relational vs document models (MySQL & MongoDB), and secure ORM/ODM integration patterns."
+      },
+      {
+        "icon": "fas fa-cubes",
+        "title": "03. Web3, Blockchain & Smart Contract Architecture",
+        "body": "Introduced cryptographic hashing, distributed consensus mechanisms, immutable ledger state, smart contract execution boundaries, and how modern web clients bridge to decentralized networks."
+      }
+    ],
+    "tags": [
+      { "icon": "fab fa-html5", "label": "HTML5" },
+      { "icon": "fas fa-exchange-alt", "label": "REST APIs" },
+      { "icon": "fas fa-bolt", "label": "WebSockets" },
+      { "icon": "fas fa-project-diagram", "label": "GraphQL" },
+      { "icon": "fas fa-bell", "label": "Webhooks" },
+      { "icon": "fas fa-cubes", "label": "Web3 & Blockchain" },
+      { "icon": "fas fa-file-contract", "label": "Smart Contracts" },
+      { "icon": "fas fa-sitemap", "label": "System Architecture" }
+    ]
+  }
+]

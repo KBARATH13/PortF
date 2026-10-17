@@ -1,0 +1,101 @@
+{
+  "tabs": [
+    {
+      "id": "fullstack",
+      "label": "Full-Stack & Cloud",
+      "icon": "fas fa-code"
+    },
+    {
+      "id": "security",
+      "label": "Security & Linux",
+      "icon": "fas fa-shield-alt"
+    },
+    {
+      "id": "workshops",
+      "label": "Workshops & Honors",
+      "icon": "fas fa-chalkboard-teacher"
+    }
+  ],
+  "certificates": [
+    {
+      "id": "java-fswd",
+      "title": "JAVA FSWD",
+      "issuer": "TECH Academy",
+      "date": "24th OCTOBER, 2025",
+      "image": "assets/Certificates/JAVA-FSWD.png",
+      "category": "fullstack"
+    },
+    {
+      "id": "mern-fswd",
+      "title": "MERN FSWD",
+      "issuer": "Udemy",
+      "date": "12th OCTOBER, 2025",
+      "image": "assets/Certificates/MERN_FSWD.png",
+      "category": "fullstack"
+    },
+    {
+      "id": "java-cert",
+      "title": "Trained in Java",
+      "issuer": "Spoken Tutorial IIT Bombay",
+      "date": "6th JUNE, 2024",
+      "image": "assets/Certificates/javaCert.jpg",
+      "category": "fullstack"
+    },
+    {
+      "id": "power-bi",
+      "title": "Trained in Power BI",
+      "issuer": "Office Master",
+      "date": "18th MAY, 2025",
+      "image": "assets/Certificates/biCert.jpg",
+      "category": "fullstack"
+    },
+    {
+      "id": "linux",
+      "title": "Linux Training",
+      "issuer": "Spoken Tutorial, IIT Bombay",
+      "date": "17th DECEMBER, 2025",
+      "image": "assets/Certificates/Linux Training.png",
+      "category": "security"
+    },
+    {
+      "id": "cyber-basic",
+      "title": "Intro to Cybersecurity",
+      "issuer": "Cisco Networking Academy",
+      "date": "10th JULY, 2026",
+      "image": "assets/Certificates/Cyber Security Basic.png",
+      "category": "security"
+    },
+    {
+      "id": "cyber-cucom",
+      "title": "Cybersecurity Credential",
+      "issuer": "Cisco Networking Academy",
+      "date": "10th JULY, 2026",
+      "image": "assets/Certificates/Cyber Seecurity CuCom.png",
+      "category": "security"
+    },
+    {
+      "id": "ai-ds-bootcamp",
+      "title": "AI/DS BootCamp",
+      "issuer": "NoviTech R&D Pvt Ltd",
+      "date": "26th OCTOBER, 2024",
+      "image": "assets/Certificates/novitech.jpg",
+      "category": "workshops"
+    },
+    {
+      "id": "iot-workshop",
+      "title": "IoT Workshop",
+      "issuer": "IoT Club of KEC",
+      "date": "23rd NOVEMBER, 2023",
+      "image": "assets/Certificates/Iot.jpg",
+      "category": "workshops"
+    },
+    {
+      "id": "computer-fundamentals",
+      "title": "Computer Fundamentals",
+      "issuer": "Dept of CA with Internal Quality Assurance Cell",
+      "date": "4th June, 2021",
+      "image": "assets/Certificates/school.jpg",
+      "category": "workshops"
+    }
+  ]
+}
