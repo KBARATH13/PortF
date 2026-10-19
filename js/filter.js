@@ -153,13 +153,21 @@ function setupViewMore(itemsSelector, btnId, visibleCount) {
   const btn   = document.getElementById(btnId);
   if (!btn || !items.length) return;
 
+  let isExpanded = false;
+  let lastWidth = window.innerWidth;
+
   function applyLimit() {
     const isMobile = window.innerWidth <= 768;
-    if (isMobile && items.length > visibleCount) {
-      items.forEach((item, i) => {
-        item.style.display = i >= visibleCount ? 'none' : '';
-      });
-      btn.style.display = 'inline-block';
+    if (isMobile) {
+      if (isExpanded) {
+        items.forEach(item => (item.style.display = ''));
+        btn.style.display = 'none';
+      } else if (items.length > visibleCount) {
+        items.forEach((item, i) => {
+          item.style.display = i >= visibleCount ? 'none' : '';
+        });
+        btn.style.display = 'inline-block';
+      }
     } else {
       items.forEach(item => (item.style.display = ''));
       btn.style.display = 'none';
@@ -167,12 +175,20 @@ function setupViewMore(itemsSelector, btnId, visibleCount) {
   }
 
   btn.addEventListener('click', () => {
+    isExpanded = true;
     items.forEach(item => (item.style.display = ''));
     btn.style.display = 'none';
   });
 
   applyLimit();
-  window.addEventListener('resize', applyLimit);
+
+  // Fix: Mobile browsers trigger resize on scroll when the address bar hides/shows (changing innerHeight only).
+  // Ignore purely vertical resizes so expanded sections never collapse unexpectedly!
+  window.addEventListener('resize', () => {
+    if (window.innerWidth === lastWidth) return;
+    lastWidth = window.innerWidth;
+    applyLimit();
+  });
 }
 
 /* ==========================================================================
@@ -184,10 +200,14 @@ function initScrollReveal() {
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
-        entry.target.classList.toggle('is-in-view', entry.isIntersecting);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in-view');
+          // Fix: Once revealed, unobserve immediately to prevent section shrinking/jumping during scroll
+          observer.unobserve(entry.target);
+        }
       });
     },
-    { root: null, rootMargin: '0px', threshold: 0.08 }
+    { root: null, rootMargin: '0px 0px -40px 0px', threshold: 0.05 }
   );
 
   document.querySelectorAll('.section:not(#navbar)').forEach(sec => {

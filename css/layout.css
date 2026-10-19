@@ -12,15 +12,19 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  background-color: #1A0505; /* Fix: Dark base prevents white canvas flashes */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   font-family: var(--font-body);
   line-height: 1.6;
   color: var(--text-on-dark);
+  background-color: #1A0505;
   background: radial-gradient(circle at 20% 15%, #420C0C 0%, #1A0505 55%, #100202 100%);
   background-attachment: fixed;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -91,15 +95,18 @@ a:hover { color: var(--primary-color); }
   margin: 0 auto;
 }
 
-/* Scroll-reveal animation */
+/* Scroll-reveal animation: uses hardware-accelerated translateY instead of scale to prevent layout jumping & backdrop flashes */
 .section.animate-on-scroll {
   opacity: 0;
-  transform: scale(0.97);
-  transition: opacity var(--transition-speed), transform var(--transition-speed);
+  transform: translateY(16px);
+  transition: opacity 0.45s ease-out, transform 0.45s ease-out;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  will-change: opacity, transform;
 }
 .section.animate-on-scroll.is-in-view {
   opacity: 1;
-  transform: scale(1);
+  transform: translateY(0);
 }
 
 /* ── Portfolio Wrapper ────────────────────────────────────────────────────── */
@@ -447,6 +454,15 @@ a:hover { color: var(--primary-color); }
 }
 
 @media (max-width: 768px) {
+  /* Fix: Disable fixed background on mobile to prevent GPU layer desync and white flashes */
+  body {
+    background-attachment: scroll;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
   /* Hero */
   .hero-section { padding: 5rem 0 3.5rem; }
   .header-content h1 { font-size: 2.7rem; }
@@ -497,11 +513,26 @@ a:hover { color: var(--primary-color); }
   .profile-image-container { margin-bottom: 1rem; }
 
   /* Skills */
-  .skills-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    min-width: 0;
+  }
 
   /* Projects */
   .project-filters { gap: 0.5rem; }
-  .projects-grid, .certifications-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .projects-grid, .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    min-width: 0;
+  }
+  .featured-duo-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    min-width: 0;
+  }
 
   /* Seminars */
   .seminar-showcase-card { padding: 1.5rem; }

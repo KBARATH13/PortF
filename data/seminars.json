@@ -14,16 +14,22 @@
     "abstract": "Conducted an in-depth technical seminar for 60+ junior engineering students, bridging academic fundamentals with production system design, modern multi-protocol communication architectures, and decentralized state machines.",
     "photos": [
       {
-        "src": "assets/Seminar/WhatsApp Image 2026-10-15 at 11.05.29 PM.jpeg",
+        "src": "assets/Seminar/a.jpeg",
         "alt": "Barath K delivering technical seminar",
         "label": "Session Delivery",
         "labelIcon": "fas fa-chalkboard-teacher"
       },
       {
-        "src": "assets/Seminar/WhatsApp Image 2026-10-15 at 11.05.30 PM.jpeg",
+        "src": "assets/Seminar/b.jpeg",
         "alt": "Audience and projection screen at seminar",
         "label": "60+ Attendees • Interactive Q&A",
         "labelIcon": "fas fa-users"
+      },
+      {
+        "src": "assets/Seminar/c.jpeg",
+        "alt": "Barath K answering questions from audience",
+        "label": "Q&A Session • Real-World Scenarios",
+        "labelIcon": "fas fa-question-circle"
       }
     ],
     "syllabus": [
