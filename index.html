@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090C">
   <title>BARATH K — Full-Stack & Web3 Developer Portfolio</title>
   <link rel="icon" href="assets/logo.png" type="image/png">
 
@@ -25,17 +26,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Modular CSS (order matters: tokens → layout → components) -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/variables.css?v=network_motion_v5">
+  <link rel="stylesheet" href="css/layout.css?v=network_motion_v5">
+  <link rel="stylesheet" href="css/components.css?v=network_motion_v5">
 </head>
 <body>
 
+  <!-- Subtle Animated Stardust Effect -->
+  <div class="lunar-starfield" aria-hidden="true"></div>
+
   <!-- ── Navigation ──────────────────────────────────────────────────────── -->
-  <nav id="navbar" class="section navbar-section" aria-label="Primary navigation">
+  <nav id="navbar" class="navbar-section" aria-label="Primary navigation">
     <div class="container">
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true">
-      <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+      <a class="nav-brand" href="#header" aria-label="BARATH K portfolio home">
+        <span class="nav-brand-mark">BK</span>
+        <span class="nav-brand-copy">BARATH K<small>ENGINEERING PORTFOLIO</small></span>
+      </a>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+      <label for="menu-toggle" class="menu-icon" aria-hidden="true">
         <i class="fas fa-bars"></i>
       </label>
       <ul class="nav-list" role="list">
@@ -47,6 +55,7 @@
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a class="nav-cta" href="#contact">Let’s connect <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
     </div>
   </nav>
 
@@ -54,26 +63,69 @@
 
     <!-- ── Hero ──────────────────────────────────────────────────────────── -->
     <header id="header" class="section header-section hero-section">
+      <div class="hero-moon-glow" aria-hidden="true"></div>
       <div class="container">
-        <div class="header-content">
-          <div class="hero-badge">
-            <i class="fas fa-code-branch"></i> Emerging Full-Stack &amp; Web3 Developer
+        <div class="hero-layout">
+          <div class="header-content">
+            <p class="hero-eyebrow"><span class="status-dot"></span> FULL-STACK · MOBILE POS · DISTRIBUTED SYSTEMS</p>
+            <h1>BARATH <span>K</span></h1>
+            <h2 class="hero-role">Architecting robust full-stack systems, from reactive client interfaces to distributed backends.</h2>
+            <p class="hero-tagline">
+              Full-stack engineer building production-grade web applications, offline-first mobile systems,
+              and distributed architectures with AI integration and tamper-evident ledgers.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-arrow-down" aria-hidden="true"></i> Explore Projects
+              </a>
+              <a href="assets/RES.pdf" download="BARATH_K_Resume.pdf" class="btn btn-secondary">
+                <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+              </a>
+            </div>
+            <div class="hero-proofline" aria-label="Core technologies">
+              <span>Java &amp; Spring Boot</span><i></i><span>React &amp; Express</span><i></i><span>Flutter &amp; Dart</span><i></i><span>AI · Web3 · IoT</span>
+            </div>
           </div>
-          <h1>BARATH K</h1>
-          <p class="hero-tagline">
-            Architecting robust full-stack applications with AI integration,
-            IoT telemetry, and tamper-evident blockchain systems.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
-              <i class="fas fa-rocket"></i> Explore Projects
-            </a>
-            <a href="#resume" class="btn btn-secondary">
-              <i class="fas fa-file-alt"></i> View Resume
-            </a>
-            <a href="#contact" class="btn btn-outline">
-              <i class="fas fa-paper-plane"></i> Contact Me
-            </a>
+          <div class="hero-visual" role="img" aria-label="Engineering stack map connecting web interfaces, services, data, and intelligent systems">
+            <div class="architecture-panel">
+              <div class="architecture-panel-head">
+                <span><span class="status-dot"></span> SYSTEMS ARCHITECTURE</span>
+                <span class="architecture-index">01 — 04</span>
+              </div>
+              <div class="system-flow">
+                <div class="system-layer">
+                  <span class="layer-index">01</span>
+                  <i class="fas fa-window-maximize" aria-hidden="true"></i>
+                  <strong>Client Layer</strong>
+                  <small>React · Flutter</small>
+                </div>
+                <span class="flow-link" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <div class="system-layer">
+                  <span class="layer-index">02</span>
+                  <i class="fas fa-diagram-project" aria-hidden="true"></i>
+                  <strong>Services</strong>
+                  <small>Spring Boot · Express</small>
+                </div>
+                <span class="flow-link" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                <div class="system-layer">
+                  <span class="layer-index">03</span>
+                  <i class="fas fa-database" aria-hidden="true"></i>
+                  <strong>Persistence</strong>
+                  <small>MySQL · MongoDB</small>
+                </div>
+              </div>
+              <div class="architecture-extensions">
+                <span><i class="fas fa-brain" aria-hidden="true"></i> AI / ML</span>
+                <span><i class="fas fa-tower-broadcast" aria-hidden="true"></i> IoT Telemetry</span>
+                <span><i class="fab fa-ethereum" aria-hidden="true"></i> Web3 / EVM</span>
+                <span><i class="fas fa-bolt" aria-hidden="true"></i> Real-Time</span>
+              </div>
+              <div class="architecture-panel-foot">
+                <span>END-TO-END ARCHITECTURE</span><span class="foot-rule"></span><span>PRODUCTION VERIFIED</span>
+              </div>
+            </div>
+            <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+            <div class="hero-orbit orbit-two" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -84,13 +136,14 @@
       <!-- ── About ───────────────────────────────────────────────────────── -->
       <section id="about" class="section about-me-section" aria-labelledby="about-heading">
         <div class="container">
+          <p class="section-kicker">01 / THE ENGINEER</p>
           <h2 id="about-heading" class="section-title">About Me</h2>
           <div class="section-content about-content-flex">
             <div class="profile-image-container">
               <img src="assets/k.png" alt="BARATH K — profile photo" class="profile-photo" width="200" height="200">
             </div>
             <div class="about-text-content">
-              <p>Hi, I'm <strong>BARATH K</strong>, pursuing my B.Tech Information Technology degree
+              <p>Hi, I'm <strong>BARATH K</strong>, finished my B.Tech Information Technology degree
                 at Kings Engineering College and an emerging full-stack developer.
                 I'm eager to learn, adapt, and passionate about creating impactful
                 Web2 and Web3 applications.</p>
@@ -102,8 +155,9 @@
       </section>
 
       <!-- ── Resume (directly after About — recruiter-first) ───────────── -->
-      <section id="resume" class="section resume-section bg-light" aria-labelledby="resume-heading">
+      <section id="resume" class="section resume-section" aria-labelledby="resume-heading">
         <div class="container">
+          <p class="section-kicker">02 / RECRUITER QUICK VIEW</p>
           <h2 id="resume-heading" class="section-title">My Resume</h2>
           <div class="section-content resume-content">
             <p>View or download my resume to learn more about my experience, skills, and qualifications.</p>
@@ -122,38 +176,41 @@
       <!-- ── Skills ──────────────────────────────────────────────────────── -->
       <section id="skills" class="section skills-section bg-light" aria-labelledby="skills-heading">
         <div class="container">
+          <p class="section-kicker">03 / TOOLS I BUILD WITH</p>
           <h2 id="skills-heading" class="section-title">Skills</h2>
+          <p class="section-intro">A practical toolkit across product interfaces, backend systems, mobile, and emerging technology.</p>
           <div class="section-content skills-grid">
-            <div class="skill-card"><i class="fab fa-html5 skill-icon html-icon"></i><h3>HTML5</h3></div>
-            <div class="skill-card"><i class="fab fa-css3-alt skill-icon css-icon"></i><h3>CSS3</h3></div>
-            <div class="skill-card"><i class="fab fa-js-square skill-icon js-icon"></i><h3>JavaScript</h3></div>
             <div class="skill-card"><i class="fab fa-java skill-icon java-icon"></i><h3>Java</h3></div>
             <div class="skill-card"><i class="fas fa-leaf skill-icon spring-icon"></i><h3>Spring Boot</h3></div>
+            <div class="skill-card"><i class="fab fa-ethereum skill-icon solidity-icon"></i><h3>Solidity</h3></div>
             <div class="skill-card"><i class="fab fa-node-js skill-icon node-icon"></i><h3>Node.js</h3></div>
             <div class="skill-card"><i class="fab fa-react skill-icon react-icon"></i><h3>React.js</h3></div>
             <div class="skill-card"><i class="fas fa-database skill-icon mysql-icon"></i><h3>MySQL</h3></div>
             <div class="skill-card"><i class="fas fa-leaf skill-icon mongo-icon"></i><h3>MongoDB</h3></div>
             <div class="skill-card"><i class="fas fa-user-tie skill-icon prompt-icon"></i><h3>Prompt Engineering</h3></div>
             <div class="skill-card"><i class="fab fa-git-alt skill-icon git-icon"></i><h3>Git &amp; GitHub</h3></div>
-            <div class="skill-card"><i class="fas fa-chart-bar skill-icon bi-icon"></i><h3>Power BI</h3></div>
           </div>
-          <button id="viewMoreSkillsBtn" class="btn-link">View More</button>
+          <div class="view-more-wrap">
+            <button type="button" id="viewMoreSkillsBtn" class="btn-link">View More</button>
+          </div>
         </div>
       </section>
 
       <!-- ── Projects ────────────────────────────────────────────────────── -->
       <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
         <div class="container">
+          <p class="section-kicker">04 / SELECTED ENGINEERING</p>
           <h2 id="projects-heading" class="section-title">Projects</h2>
+          <p class="section-intro">From production software to distributed systems, each project connects a real problem to a thoughtful technical solution.</p>
 
           <!-- Filter bar (static; JS just toggles .active) -->
           <div class="project-filters" role="group" aria-label="Project category filters">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="mobile">Mobile / Production POS</button>
-            <button class="filter-btn" data-filter="full-stack">Full-Stack</button>
-            <button class="filter-btn" data-filter="ai">AI &amp; ML</button>
-            <button class="filter-btn" data-filter="blockchain">Blockchain / Web3</button>
-            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="mobile">Mobile / Production POS</button>
+            <button type="button" class="filter-btn" data-filter="full-stack">Full-Stack</button>
+            <button type="button" class="filter-btn" data-filter="ai">AI &amp; ML</button>
+            <button type="button" class="filter-btn" data-filter="blockchain">Blockchain / Web3</button>
+            <button type="button" class="filter-btn" data-filter="iot">IoT</button>
           </div>
 
           <!-- JS renders all project cards here -->
@@ -171,6 +228,7 @@
       <!-- ── Seminars ─────────────────────────────────────────────────────── -->
       <section id="seminars" class="section seminars-section" aria-labelledby="seminars-heading">
         <div class="container">
+          <p class="section-kicker">05 / SHARING KNOWLEDGE</p>
           <h2 id="seminars-heading" class="section-title">Technical Talks &amp; Seminars</h2>
           <div id="seminar-container">
             <!-- Rendered by app.js from seminars.json -->
@@ -181,6 +239,7 @@
       <!-- ── Certifications ──────────────────────────────────────────────── -->
       <section id="certifications" class="section certifications-section" aria-labelledby="certs-heading">
         <div class="container">
+          <p class="section-kicker">06 / CONTINUOUS LEARNING</p>
           <h2 id="certs-heading" class="section-title">Certifications</h2>
 
           <!-- Tab bar rendered by app.js -->
@@ -190,16 +249,19 @@
 
           <!-- Cert cards rendered by app.js -->
           <div id="certifications-grid" class="section-content certifications-grid" aria-live="polite">
-            <!-- Rendered by app.js from certificate.json -->
+            <!-- Rendered by app.js from certificates.json -->
           </div>
 
-          <button id="viewMoreCertsBtn" class="btn-link">View More</button>
+          <div class="view-more-wrap">
+            <button type="button" id="viewMoreCertsBtn" class="btn-link">View More</button>
+          </div>
         </div>
       </section>
 
       <!-- ── Contact ─────────────────────────────────────────────────────── -->
-      <section id="contact" class="section contact-section bg-light" aria-labelledby="contact-heading">
+      <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
         <div class="container">
+          <p class="section-kicker">07 / START A CONVERSATION</p>
           <h2 id="contact-heading" class="section-title">Contact Me</h2>
           <div class="section-content contact-content">
             <p>I'm always open to new opportunities, collaborations, or just a chat about technology. Feel free to reach out!</p>
@@ -213,16 +275,16 @@
                 <a href="tel:+918925505316">+91 8925505316</a>
               </p>
               <div class="social-links contact-grid">
-                <a href="https://www.linkedin.com/in/barath-k-4335ab36a/" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+                <a href="https://www.linkedin.com/in/barath-k-4335ab36a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
                   <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
                 </a>
-                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" rel="noopener" aria-label="Naukri Profile">
+                <a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank" rel="noopener noreferrer" aria-label="Naukri Profile">
                   <i class="fas fa-briefcase" aria-hidden="true"></i> Naukri
                 </a>
-                <a href="https://github.com/KBARATH13" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                <a href="https://github.com/KBARATH13" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
                   <i class="fab fa-github" aria-hidden="true"></i> GitHub
                 </a>
-                <a href="https://instagram.com/silent_bt_terrific/" target="_blank" rel="noopener" aria-label="Instagram Profile">
+                <a href="https://instagram.com/silent_bt_terrific/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
                   <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
                 </a>
               </div>
@@ -249,10 +311,9 @@
          aria-modal="true" aria-label="Project / Certificate Inspector">
     <div class="drawer-header">
       <span class="drawer-header-title">
-        <i class="fas fa-magnifying-glass"></i>
         <span>Inspector</span>
       </span>
-      <button id="drawer-close-btn" class="drawer-close-btn" aria-label="Close inspector">
+      <button type="button" id="drawer-close-btn" class="drawer-close-btn" aria-label="Close inspector">
         <i class="fas fa-xmark"></i>
       </button>
     </div>
@@ -261,7 +322,7 @@
 
   <!-- ── Scripts (deferred, load-order: modal → filter → app) ─────────── -->
   <script src="js/modal.js"  defer></script>
-  <script src="js/filter.js" defer></script>
+  <script src="js/filter.js?v=network_motion_v5" defer></script>
   <script src="js/app.js"    defer></script>
 
   <!-- Inline micro-script: dynamic footer year (no defer needed) -->

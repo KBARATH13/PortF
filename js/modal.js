@@ -67,7 +67,13 @@ const Drawer = (() => {
       ? `<div class="drawer-image-wrap">
            <img src="${project.image}" alt="${project.imageAlt || project.title}" loading="lazy">
          </div>`
-      : '';
+      : (project.bannerIcons
+          ? `<div class="project-banner ${project.bannerClass || ''}" style="min-height: 140px; border-radius: 12px; margin-bottom: 1.25rem;">
+               <div class="banner-tech-icons">
+                 ${project.bannerIcons.map(ic => `<span title="${ic.title || ''}"><i class="${ic.icon}"></i></span>`).join('')}
+               </div>
+             </div>`
+          : '');
 
     const tagsHTML = (project.tags || [])
       .map(t => `<span class="tech-tag">${t}</span>`)

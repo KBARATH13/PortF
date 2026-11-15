@@ -127,25 +127,36 @@ function buildLinks(links) {
 
 function buildFeaturedDuoCard(p) {
   const cats = (p.categories || []).join(' ');
-  return `
-    <div class="project-card featured-duo-card"
-         data-category="${cats}"
-         data-project-id="${p.id}"
-         data-pillar="${p.pillar ? 'true' : 'false'}">
-      <div class="featured-ribbon">
-        <i class="${p.ribbon.icon}"></i> ${p.ribbon.label}
-      </div>
-      <div class="project-banner ${p.bannerClass}">
+  const hasImage = Boolean(p.image);
+  const ribbonHTML = p.ribbon
+    ? `<div class="featured-ribbon">
+        ${p.ribbon.icon ? `<i class="${p.ribbon.icon}"></i>` : ''} ${p.ribbon.label}
+      </div>`
+    : '';
+
+  const topSection = hasImage
+    ? `<div class="project-media">
+        <img src="${p.image}" alt="${escAttr(p.imageAlt || p.title)}" loading="lazy">
+      </div>`
+    : `<div class="project-banner ${p.bannerClass || ''}">
         <div class="banner-tech-icons">${buildBannerIcons(p.bannerIcons)}</div>
         <div class="banner-title-area">
           <h3>${p.title}</h3>
           <p>${p.subtitle}</p>
         </div>
-      </div>
+      </div>`;
+
+  return `
+    <div class="project-card featured-duo-card"
+         data-category="${cats}"
+         data-project-id="${p.id}"
+         data-pillar="${p.pillar ? 'true' : 'false'}">
+      ${ribbonHTML}
+      ${topSection}
       <div class="project-body">
-        <p class="project-description">${p.description}</p>
+        ${hasImage ? `<h3>${p.title}</h3>` : ''}
+        ${hasImage && p.subtitle ? `<p class="project-subtitle">${p.subtitle}</p>` : ''}
         <div class="project-tech-stack">${buildTechTags(p.tags)}</div>
-        <div class="project-links">${buildLinks(p.links)}</div>
       </div>
     </div>`;
 }
@@ -172,28 +183,37 @@ function buildProductionCard(p) {
         </div>
       </div>
       <div class="project-body">
-        <p class="project-description">${p.description}</p>
         <div class="project-tech-stack">${buildTechTags(p.tags)}</div>
-        <div class="project-links">${buildLinks(p.links)}</div>
       </div>
     </div>`;
 }
 
 function buildStandardCard(p) {
   const cats = (p.categories || []).join(' ');
+  const hasImage = Boolean(p.image);
+
+  const topSection = hasImage
+    ? `<div class="project-media">
+        <img src="${p.image}" alt="${escAttr(p.imageAlt || p.title)}" loading="lazy">
+      </div>`
+    : `<div class="project-banner ${p.bannerClass || ''}">
+        <div class="banner-tech-icons">${buildBannerIcons(p.bannerIcons)}</div>
+        <div class="banner-title-area">
+          <h3>${p.title}</h3>
+          ${p.subtitle ? `<p>${p.subtitle}</p>` : ''}
+        </div>
+      </div>`;
+
   return `
     <div class="project-card"
          data-category="${cats}"
          data-project-id="${p.id}"
          data-pillar="${p.pillar ? 'true' : 'false'}">
-      <div class="project-media">
-        <img src="${p.image}" alt="${escAttr(p.imageAlt || p.title)}" loading="lazy">
-      </div>
+      ${topSection}
       <div class="project-body">
-        <h3>${p.title}</h3>
-        <p class="project-description">${p.description}</p>
+        ${hasImage ? `<h3>${p.title}</h3>` : ''}
+        ${hasImage && p.subtitle ? `<p class="project-subtitle">${p.subtitle}</p>` : ''}
         <div class="project-tech-stack">${buildTechTags(p.tags)}</div>
-        <div class="project-links">${buildLinks(p.links)}</div>
       </div>
     </div>`;
 }
@@ -289,7 +309,10 @@ function renderSeminars(seminars) {
       ${metaHTML}
       <div class="seminar-grid-layout">
         <div class="seminar-visual-col">
-          <div class="seminar-dual-gallery">${photosHTML}</div>
+          <div class="seminar-dual-gallery" id="seminar-gallery">
+            <div class="seminar-gallery-track" id="seminar-gallery-track">${photosHTML}</div>
+            <div class="seminar-slider-dots" id="seminar-slider-dots" role="tablist" aria-label="Seminar photo navigation"></div>
+          </div>
         </div>
         <div class="seminar-details-col">
           <span class="seminar-kicker">${s.kicker}</span>

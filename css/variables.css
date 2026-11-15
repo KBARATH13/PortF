@@ -1,81 +1,81 @@
-/* ==========================================================================
-   variables.css — Design Tokens, Custom Properties & Animations
-   Portfolio: BARATH K | Crimson Glassmorphism Theme
-   ========================================================================== */
-
 :root {
-  /* ── Palette ─────────────────────────────────────────── */
-  --primary-color:       #C23B3B;
-  --primary-light:       #E05353;
-  --secondary-color:     #FCE8E8;
-  --accent-color:        #FF6B6B;
-  --accent-glow:         rgba(255, 107, 107, 0.4);
-  --gold-accent:         #FFD166;
+  --obsidian-black: #08090C;
+  --midnight-charcoal: #111318;
+  --graphite: #252830;
+  --moon-silver: #C7CBD1;
+  --platinum: #E6E8EC;
+  --lunar-mist: #9299A5;
+  --icy-blue: #9BBFE0;
+  --icy-blue-dim: rgba(155, 191, 224, 0.12);
+  --icy-blue-border: rgba(155, 191, 224, 0.35);
 
-  /* ── Backgrounds ─────────────────────────────────────── */
-  --bg-dark:             #1A0505;
-  --bg-dark-alt:         #2A0909;
-  --bg-light-alt:        rgba(74, 18, 18, 0.45);
+  --bg-main: var(--obsidian-black);
+  --bg-alt: var(--moon-silver);
+  --bg-silver: var(--platinum);
+  --card-bg: var(--platinum);
+  --card-dark: var(--midnight-charcoal);
+  --text-on-dark: var(--platinum);
+  --text-on-light: var(--midnight-charcoal);
+  --text-muted: var(--graphite);
+  --text-muted-dark: var(--moon-silver);
+  --border-color: rgba(37, 40, 48, 0.18);
+  --border-dark: rgba(230, 232, 236, 0.14);
+  --card-glass-border: rgba(37, 40, 48, 0.18);
 
-  /* ── Text ────────────────────────────────────────────── */
-  --text-on-dark:        #FFFFFF;
-  --text-muted:          #F0D5D5;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Lato', sans-serif;
+  --silver-gradient-text: linear-gradient(120deg, #E6E8EC 8%, #C7CBD1 48%, #9299A5 100%);
+  --silver-gradient-btn: linear-gradient(135deg, #E6E8EC 0%, #C7CBD1 100%);
+  --silver-gradient-hover: linear-gradient(135deg, #E6E8EC 0%, #C7CBD1 100%);
 
-  /* ── Glass / Card Surfaces ───────────────────────────── */
-  --card-bg:             rgba(60, 14, 14, 0.65);
-  --card-glass-border:   rgba(252, 232, 232, 0.15);
-  --border-color:        rgba(194, 59, 59, 0.35);
+  --box-shadow: 0 16px 40px rgba(8, 9, 12, 0.12);
+  --glass-shadow: 0 20px 55px rgba(8, 9, 12, 0.2);
+  --transition-speed: 0.4s ease-out;
+  --fast-transition-speed: 0.25s ease;
 
-  /* ── Typography ──────────────────────────────────────── */
-  --font-heading:        'Poppins', sans-serif;
-  --font-body:           'Lato', sans-serif;
-
-  /* ── Shadows ─────────────────────────────────────────── */
-  --box-shadow:          0 10px 30px rgba(0, 0, 0, 0.45);
-  --glass-shadow:        0 12px 35px 0 rgba(0, 0, 0, 0.4);
-
-  /* ── Transitions ─────────────────────────────────────── */
-  --transition-speed:        0.4s ease-out;
-  --fast-transition-speed:   0.25s ease;
-
-  /* ── Drawer / Modal ──────────────────────────────────── */
-  --drawer-width:        420px;
-  --drawer-bg:           rgba(28, 6, 6, 0.96);
-  --drawer-border:       rgba(255, 107, 107, 0.25);
-  --drawer-z:            2000;
-  --overlay-bg:          rgba(0, 0, 0, 0.25);
+  --drawer-width: 460px;
+  --drawer-bg: var(--platinum);
+  --drawer-border: rgba(37, 40, 48, 0.16);
+  --drawer-z: 2000;
+  --overlay-bg: rgba(8, 9, 12, 0.72);
 }
 
-/* ==========================================================================
-   Keyframe Animations (global — used across components)
-   ========================================================================== */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(-14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulseGreen {
-  0%   { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(4, 23, 15, 0.7); }
-  70%  { transform: scale(1.15); box-shadow: 0 0 0 6px rgba(4, 23, 15, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(4, 23, 15, 0); }
+@keyframes pulseAccent {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(155, 191, 224, 0.42); }
+  60% { box-shadow: 0 0 0 7px rgba(155, 191, 224, 0); }
+}
+
+@keyframes moonPulse {
+  from { opacity: 0.45; transform: translate(-50%, -50%) scale(0.96); }
+  to { opacity: 0.72; transform: translate(-50%, -50%) scale(1.04); }
+}
+
+@keyframes orbitDrift {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes starFloat {
+  from { transform: translateY(0); }
+  to { transform: translateY(-320px); }
 }
 
 @keyframes drawerSlideIn {
-  from { transform: translateX(100%); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
-}
-
-@keyframes drawerSlideOut {
-  from { transform: translateX(0);    opacity: 1; }
-  to   { transform: translateX(100%); opacity: 0; }
+  from { transform: translateX(100%); opacity: 0.6; }
+  to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes overlayFadeIn {
   from { opacity: 0; }
-  to   { opacity: 1; }
+  to { opacity: 1; }
 }

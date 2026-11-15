@@ -1,7 +1,7 @@
 {
   "tabs": [
     {
-      "id": "fullstack",
+      "id": "fullstack & cloud",
       "label": "Full-Stack & Cloud",
       "icon": "fas fa-code"
     },
@@ -23,7 +23,7 @@
       "issuer": "TECH Academy",
       "date": "24th OCTOBER, 2025",
       "image": "assets/Certificates/JAVA-FSWD.png",
-      "category": "fullstack"
+      "category": "fullstack & cloud"
     },
     {
       "id": "mern-fswd",
@@ -31,23 +31,23 @@
       "issuer": "Udemy",
       "date": "12th OCTOBER, 2025",
       "image": "assets/Certificates/MERN_FSWD.png",
-      "category": "fullstack"
+      "category": "fullstack & cloud"
     },
     {
-      "id": "java-cert",
-      "title": "Trained in Java",
-      "issuer": "Spoken Tutorial IIT Bombay",
-      "date": "6th JUNE, 2024",
-      "image": "assets/Certificates/javaCert.jpg",
-      "category": "fullstack"
+      "id": "Solidity-Ethereum Blockchain",
+      "title": "Solidity & Ethereum Blockchain",
+      "issuer": "Udemy",
+      "date": "12th OCTOBER, 2025",
+      "image": "assets/Certificates/Solidity.jpg",
+      "category": "fullstack & cloud"
     },
     {
-      "id": "power-bi",
-      "title": "Trained in Power BI",
-      "issuer": "Office Master",
-      "date": "18th MAY, 2025",
-      "image": "assets/Certificates/biCert.jpg",
-      "category": "fullstack"
+      "id": "aws-cloud",
+      "title": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "20th OCTOBER, 2026",
+      "image": "assets/Certificates/AWS-Cloud-Practitioner.jpg",
+      "category": "fullstack & cloud"
     },
     {
       "id": "linux",
@@ -87,6 +87,14 @@
       "issuer": "IoT Club of KEC",
       "date": "23rd NOVEMBER, 2023",
       "image": "assets/Certificates/Iot.jpg",
+      "category": "workshops"
+    },
+    {
+      "id": "java-cert",
+      "title": "Trained in Java",
+      "issuer": "Spoken Tutorial IIT Bombay",
+      "date": "6th JUNE, 2024",
+      "image": "assets/Certificates/javaCert.jpg",
       "category": "workshops"
     },
     {

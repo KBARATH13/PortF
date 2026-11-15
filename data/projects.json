@@ -6,6 +6,8 @@
     "subtitle": "AI-Assisted Smart-Farming Platform with IoT & Tamper-Evident Blockchain Ledger",
     "type": "featured-duo",
     "ribbon": { "icon": "fas fa-crown", "label": "Technology-Rich Flagship" },
+    "image": "assets/Project HomePage/TechnoAgri.png",
+    "imageAlt": "TechnoAgri (SmartFarm) Project Thumbnail",
     "bannerClass": "smartfarm-banner",
     "bannerIcons": [
       { "icon": "fab fa-react",    "title": "React SPA" },
@@ -15,7 +17,7 @@
       { "icon": "fas fa-microchip","title": "ESP32 IoT" }
     ],
     "categories": ["full-stack", "ai", "blockchain", "iot"],
-    "description": "An end-to-end smart agriculture ecosystem integrating an <strong>ESP32 soil sensor</strong> network, high-performance <strong>Express 5 REST API</strong>, and <strong>Python ML models (scikit-learn &amp; TensorFlow CNN)</strong> for automated crop recommendation, yield forecasting, and disease diagnosis. Anchors cryptographic state hashes into a <strong>Hyperledger Fabric 2.5 blockchain</strong> ledger for tamper-evident data integrity and verification.",
+    "description": "An end-to-end smart agriculture ecosystem integrating an <strong>ESP32 soil sensor</strong> network, high-performance <strong>Express 5 REST API</strong>, and <strong>Python ML models (scikit-learn & TensorFlow CNN)</strong> for automated crop recommendation, yield forecasting, and disease diagnosis. Anchors cryptographic state hashes into a <strong>Hyperledger Fabric 2.5 blockchain</strong> ledger for tamper-evident data integrity and verification.",
     "tags": ["React SPA", "Express 5", "MongoDB", "Python 3.13 (ML & CNN)", "Hyperledger Fabric 2.5", "ESP32 IoT", "Docker Compose", "JWT Auth"],
     "links": [
       { "label": "Frontend Code",       "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Techno_Agri",                          "type": "secondary" },
@@ -32,6 +34,8 @@
     "subtitle": "Comprehensive Learning Platform with AI Question Engine, Multi-User Chat & Evaluation",
     "type": "featured-duo",
     "ribbon": { "icon": "fas fa-layer-group", "label": "Feature-Rich Flagship" },
+    "image": "assets/Project HomePage/QuizCraft.png",
+    "imageAlt": "QuizCraft Project Thumbnail",
     "bannerClass": "quizcraft-featured-banner",
     "bannerIcons": [
       { "icon": "fab fa-react",          "title": "React SPA" },
@@ -60,14 +64,14 @@
     "flexibilityTag": "Industry Flexibility: Mobile & Hardware Engineering",
     "bannerIcons": [
       { "icon": "fab fa-google",    "title": "Flutter & Dart" },
-      { "icon": "fas fa-mobile-alt","title": "Mobile POS" },
+      { "icon": "fas fa-mobile-alt", "title": "Mobile POS" },
       { "icon": "fas fa-print",     "title": "ESC/POS Thermal Network Printer" },
       { "icon": "fas fa-barcode",   "title": "CameraX Barcode Scanner" },
       { "icon": "fas fa-fire",      "title": "Google Cloud Firestore" },
       { "icon": "fas fa-database",  "title": "Offline-First Sync Engine" }
     ],
     "categories": ["mobile", "production"],
-    "description": "Demonstrating proven engineering flexibility beyond web applications, <strong>GroAppBill</strong> is a real-time deployed, high-throughput Point of Sale (POS) and inventory mobile system currently used by shop owners and cashiers in day-to-day operations. Engineered in <strong>Flutter &amp; Dart</strong> using <strong>Riverpod 2.x</strong> state management, it connects directly with physical store hardware via <strong>raw TCP network socket ESC/POS thermal printing (port 9100)</strong>, <strong>CameraX / ML Kit barcode scanning</strong>, and an <strong>offline-first local cache</strong> with automated Cloud Firestore synchronization when reconnected.",
+    "description": "Demonstrating proven engineering flexibility beyond web applications, <strong>GroAppBill</strong> is a real-time deployed, high-throughput Point of Sale (POS) and inventory mobile system currently used by shop owners and cashiers in day-to-day operations. Engineered in <strong>Flutter & Dart</strong> using <strong>Riverpod 2.x</strong> state management, it connects directly with physical store hardware via <strong>raw TCP network socket ESC/POS thermal printing (port 9100)</strong>, <strong>CameraX / ML Kit barcode scanning</strong>, and an <strong>offline-first local cache</strong> with automated Cloud Firestore synchronization when reconnected.",
     "tags": ["In Active Production", "Flutter & Dart", "Riverpod 2.x", "Google Cloud Firestore", "ESC/POS Thermal Socket (9100)", "CameraX Barcode Scanning", "Offline Queue & Sync", "Android Hardware Layer"],
     "links": [
       { "label": "Flutter Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/GroAppBill",                    "type": "secondary" },
@@ -93,7 +97,7 @@
   {
     "id": "gignity",
     "pillar": false,
-    "title": "Gignity – Local Gigs & Part-Time Finder",
+    "title": "Gignity – Local Gigs & Part-Time Job Finder",
     "subtitle": null,
     "type": "standard",
     "image": "assets/Project HomePage/gignity.png",
@@ -105,6 +109,31 @@
       { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/expogig/tree/frontendgig","type": "secondary" },
       { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/expogig/tree/backendgig", "type": "secondary" },
       { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/Gignity_Architecture_Presentation.pptx",   "type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "dripmint",
+    "pillar": false,
+    "title": "DripMint – Roguelus NFT Minting Platform",
+    "subtitle": "React/Vite Web3 dApp with ERC‑20 utility token & ERC‑721 hardware NFTs",
+    "type": "standard",
+    "image": "assets/Project HomePage/DripMint.png",
+    "imageAlt": "DripMint Project Thumbnail",
+    "bannerClass": "dripmint-banner",
+    "bannerIcons": [
+      { "icon": "fab fa-react", "title": "React Vite" },
+      { "icon": "fas fa-ethereum", "title": "Ethers.js v6" },
+      { "icon": "fas fa-gem", "title": "ERC‑20 Token" },
+      { "icon": "fas fa-cube", "title": "ERC‑721 NFTs" },
+      { "icon": "fab fa-js", "title": "JavaScript" }
+    ],
+    "categories": ["full-stack", "blockchain", "web3", "nft"],
+    "description": "A React + Vite front‑end powered by Ethers.js v6, enabling users to claim daily ROGUELUS tokens via a 24‑hour faucet, purchase tokens with ETH, and mint on‑chain SVG hardware NFTs (AsusTechGear). Built on an Anvil local EVM node with persistent state.",
+    "tags": ["React Vite","Ethers.js","MetaMask","ERC-20","ERC-721","Anvil&Hardhat"],
+    "links": [
+      { "label": "Frontend Code", "icon": "fas fa-code", "href": "https://github.com/KBARATH13/DriftMint/tree/frontend", "type": "secondary" },
+      { "label": "Smart Contract Code", "icon": "fas fa-code", "href": "https://github.com/KBARATH13/DriftMint/tree/backend", "type": "secondary" },
+      { "label": "View Architecture PPT", "icon": "fas fa-file-powerpoint", "href": "assets/PPT/DripMint_Architecture_Presentation.pptx", "type": "architecture", "download": true }
     ]
   },
   {
@@ -156,6 +185,28 @@
       { "label": "Frontend Code",        "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Railway-Ticket-Booking/tree/frontend","type": "secondary" },
       { "label": "Backend Code",         "icon": "fas fa-code",           "href": "https://github.com/KBARATH13/Railway-Ticket-Booking",              "type": "secondary" },
       { "label": "View Architecture PPT","icon": "fas fa-file-powerpoint","href": "assets/PPT/Railway_Seat_Management_Architecture.pptx",             "type": "architecture", "download": true }
+    ]
+  },
+  {
+    "id": "ast-token-slayer",
+    "pillar": false,
+    "title": "AST Token Slayer – IDE Optimization Extension",
+    "subtitle": "Zero-config background token optimization mirror for Antigravity IDE & VS Code",
+    "type": "standard",
+    "bannerClass": "ast-slayer-banner",
+    "bannerIcons": [
+      { "icon": "fas fa-bolt", "title": "Token Optimization" },
+      { "icon": "fab fa-node-js", "title": "Node 18+ ESM" },
+      { "icon": "fas fa-code", "title": "TypeScript & AST" },
+      { "icon": "fas fa-terminal", "title": "VS Code & Antigravity IDE" },
+      { "icon": "fas fa-shield-halved", "title": "Zero-Network Local Ledger" }
+    ],
+    "categories": ["full-stack", "ai"],
+    "description": "A lightweight, zero-config background IDE extension for Antigravity IDE and VS Code that analyzes source code across 7 languages (.ts, .tsx, .js, .dart, .sol, .json, .md) on open and save. Uses AST parsing to strip comments and collapse whitespace, reporting live token savings via status bar codicons and persisting telemetry strictly to a private local JSONL ledger.",
+    "tags": ["TypeScript", "Node.js 18+ ESM", "VS Code Extension API", "AST Parsing", "Token Optimization", "esbuild", "Local Telemetry"],
+    "links": [
+      { "label": "Extension Code", "icon": "fas fa-code", "href": "https://github.com/KBARATH13/ast-slayer-extension", "type": "secondary" },
+      { "label": "View Architecture", "icon": "fas fa-project-diagram", "href": "https://github.com/KBARATH13/ast-slayer-extension/blob/master/ARCHITECTURE.md", "type": "architecture" }
     ]
   }
 ]
